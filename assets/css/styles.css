@@ -1,0 +1,44 @@
+.container {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: 0.5fr 9fr 0.5fr;
+  height: 100%;
+  grid-template-areas:
+    "encabezado encabezado"
+    "barra cuerpo"
+    "barra pie";
+  text-align: center;
+}
+.header {
+  background-color: rgb(91, 167, 255);
+  grid-area: encabezado;
+}
+.barra {
+  background-color: rgb(235, 234, 230);
+  grid-area: barra;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.cuerpo {
+  background-color: rgb(201, 201, 204);
+  grid-area: cuerpo;
+}
+.pie {
+  background-color: rgb(235, 234, 230);
+  grid-area: pie;
+  align-items: center;
+}
+.cuerpo {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.card {
+  display: flex;
+  flex-direction: column;
+}
+.card img {
+  width: 90%;
+  height: 90%;
+  object-fit: cover;
+}
